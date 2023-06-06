@@ -2,3 +2,31 @@
   position: absolute;
   top: 500px;
 }
+
+.simo-component{
+  position: absolute;
+  top: 500px;
+  right: 800px;
+}
+@keyframes suca{
+  from {left: 800px;}
+  to {left: calc(100vw + 300px);}
+}
+
+@keyframes gesu{
+  from {left:calc(100vw + 300px) ;}
+  to {left: 800px ;}
+}
+.show{
+  animation-name: suca;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+}
+
+.hide{
+  animation-name: gesu;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+

@@ -38,5 +38,13 @@ export class AppComponent {
 
   showHide(){
     this.isShow=!this.isShow;
+    // document.getElementById('simo')?.classList.toggle('show')
+    if(this.isShow){
+    document.getElementById('simo')?.classList.add('hide');
+    document.getElementById('simo')?.classList.remove('show');
+    }else{
+      document.getElementById('simo')?.classList.add('show');
+      document.getElementById('simo')?.classList.remove('hide');
+    }
   }
 }
