@@ -1,6 +1,16 @@
+<header class="header">
+  <h1>Animations</h1>
+  <div class="spacer"></div>
+  <button (click)="showSidebar() " appFatBut>menù</button>
+</header>
+
+
 <button >BESTEMMIA</button>
 <app-simo-animations id="simo" class="simo-component"></app-simo-animations>
 
 <button (click)="showHide()">hide/show</button>
 
 <app-open-close class="openCloseComponent" [@showHide]="isShow?'show':'hide'"></app-open-close>
+
+
+<app-sidenav class="side-nav" [@openCloseSidenav]="isSideBarOpen?'open':'closed'"></app-sidenav>
